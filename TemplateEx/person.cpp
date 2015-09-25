@@ -5,8 +5,9 @@
  */
 
 #include "person.h"
-#include <iostream.h>
-#include <string.h>
+#include <iostream>
+
+using namespace std;
 
 
 /*

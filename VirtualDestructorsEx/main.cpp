@@ -8,9 +8,11 @@
  *
  ***************************************************************/
 
-#include <iostream.h>
 #include "rectangle.h"
+#include <iostream>
 
+ using namespace std;
+ 
 /* Create destructors for the class Shape and the
    class Rectangle.  Perform cleanup required
    by the class (if any), and print a message that

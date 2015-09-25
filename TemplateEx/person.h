@@ -5,7 +5,7 @@
  * Implementation file for Person
  */
 
-#include <iostream.h>
+#include <iostream>
 
 // Forward declaration of ostream
 //class ostream;
@@ -25,7 +25,7 @@ public:
    inline virtual const char* getName() const;
    inline virtual int getAge() const;
 
-   friend ostream& operator<< ( ostream&, const Person& );
+   friend std::ostream& operator<< ( std::ostream&, const Person& );
 
 private:
    void initialize( const char* name, const int age );

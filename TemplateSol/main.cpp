@@ -4,9 +4,11 @@
  * Implementation file for main
  */
 
-#include <iostream.h>
 #include "stack.h"
 #include "person.h"
+#include <iostream>
+
+using namespace std;
 
 int main() {
 

@@ -13,8 +13,9 @@
 
 /* Include Files */
 #include "shape.h"
-#include <string.h>
-#include <iostream.h>
+#include <iostream>
+
+using namespace std;
 
 /* Constants and defines */
 
@@ -33,7 +34,7 @@
 
 Shape::Shape
 ( 
- char* name, // Name of this Shape
+ const char* name, // Name of this Shape
  int x,      // X coordinate of the rectangle
  int y       // Y coordinate if the rectangle
  )
@@ -156,7 +157,7 @@ int Shape::getY()
  *
  ***************************************************************/
 
-char* Shape::getName()
+const char* Shape::getName()
 {
 	return( myName );
 }

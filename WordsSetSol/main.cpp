@@ -15,7 +15,7 @@
 #include <set>
 #include <vector>
 #include <algorithm>
-#include <stdlib.h>
+#include <cstdlib>
 
 using namespace std;
 

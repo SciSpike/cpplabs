@@ -33,14 +33,14 @@
 class Shape
 {
 public:
-	Shape( char* name, int _x, int _y );
+	Shape( const char* name, int _x, int _y );
 
 	virtual void draw() = 0;
 	virtual void move( int x, int y );
 	int          getX();
 	int          getY();
 
-	char*        getName();
+	const char*        getName();
 
 protected:
 	char* myName; // Name of the Shape

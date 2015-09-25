@@ -4,11 +4,6 @@
  * This file test the algorithms
  */
 
-// Disable the warnings from microsoft
-#ifdef _MSC_VER
-#pragma warning( disable : 4786 )
-#endif
-
 /* Hints/Suggestions:
    The most common and useful classes for this application are:
    Word: store 1 word, support comparison and display
@@ -17,13 +12,13 @@
 
 #include <iostream>
 #include <cassert>
+#include <string>
 using namespace std;
 
-#include <string.h>
 
 class Word { // store 1 word, publish case-insensitive comparison
 public:
-	Word(char * str="");
+	Word(const char * str="");
 	bool operator<(const Word & rhs) const;
 	friend ostream & operator<<(ostream & os, const Word & rhs);
 	enum { MAXLEN = 25 };
@@ -31,7 +26,7 @@ private:
 	char s[MAXLEN+1];
 };
 
-Word::Word(char * str) {
+Word::Word(const char * str) {
 	if (strlen(str)>MAXLEN)
 		cerr << "Word exceeds capacity: " << str << endl;
 	else

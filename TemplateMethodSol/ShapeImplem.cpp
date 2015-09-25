@@ -13,8 +13,10 @@
 
 /* Include Files */
 #include "shapeimplem.h"
-#include <iostream.h>
 #include "point.h"
+#include <iostream>
+
+using namespace std;
 
 /* Constants and defines */
 

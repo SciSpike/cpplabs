@@ -13,7 +13,9 @@
 
 /* Include Files */
 #include "point.h"
-#include <iostream.h>
+#include <iostream>
+
+using namespace std;
 
 /* Constants and defines */
 

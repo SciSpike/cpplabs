@@ -11,9 +11,10 @@
  ***************************************************************/
 
 /* Include Files */
-#include <iostream.h>
-#include <fstream.h>
+#include <iostream>
+#include <fstream>
 
+using namespace std;
 /* Constants and defines */
 
 /****************************************************************

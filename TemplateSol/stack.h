@@ -1,5 +1,7 @@
 #ifndef STACK_H
 #define STACK_H
+#include <iostream>
+
 
 template <typename Type, int ArraySize>
 class Stack {
@@ -23,7 +25,7 @@ template <typename Type, int ArraySize>
 Stack<Type,ArraySize>::Stack()
 : myTopIndex( -1 )
 {
-   cout << "In Template Stack Constructor." << endl;
+   std::cout << "In Template Stack Constructor." << std::endl;
 }
 
 /*
@@ -32,7 +34,7 @@ Stack<Type,ArraySize>::Stack()
 template <typename Type, int ArraySize>
 Stack<Type,ArraySize>::~Stack() {
 
-   cout << "In Template Stack Destructor." << endl;
+   std::cout << "In Template Stack Destructor." << std::endl;
 
 }
 

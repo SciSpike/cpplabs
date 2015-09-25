@@ -15,7 +15,7 @@
 #include <deque>
 #include <algorithm>
 #include <iterator>
-#include <stdlib.h>
+#include <cstdlib>
 
 using namespace std;
 

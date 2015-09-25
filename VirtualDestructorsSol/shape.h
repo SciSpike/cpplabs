@@ -33,7 +33,7 @@
 class Shape
 {
 public:
-	Shape( char* name, int _x, int _y );
+	Shape( const char* name, int _x, int _y );
     virtual ~Shape();
 
 	virtual void draw() = 0;

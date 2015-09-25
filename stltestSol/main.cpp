@@ -1,4 +1,3 @@
-#pragma warning( disable : 4786 )
 #include <algorithm>
 #include <iostream>
 #include <vector>

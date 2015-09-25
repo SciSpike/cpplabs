@@ -4,18 +4,13 @@
  * This file test the algorithms
  */
 
-// Disable the warnings from microsoft
-#ifdef _MSC_VER
-#pragma warning( disable : 4786 )
-#endif
-
 #include <iostream>
 #include <iterator>
 #include <string>
 #include <set>
 #include <deque>
 #include <algorithm>
-#include <stdlib.h>
+#include <cstdlib>
 
 using namespace std;
 
