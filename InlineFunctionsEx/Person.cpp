@@ -5,8 +5,10 @@
  */
 
 #include "person.h"
-#include <string.h>
-#include <iostream.h>
+#include <string>
+#include <iostream>
+
+using namespace std;
 
 /*
  * Print a person

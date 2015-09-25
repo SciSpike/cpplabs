@@ -1,6 +1,7 @@
-#include <stdio.h>
-#include <string.h>
 #include "person.h"
+#inlcude <string>
+
+using namespace std;
 
 void set_string(char *dest, const char *src)
 {

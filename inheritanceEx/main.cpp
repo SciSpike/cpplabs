@@ -4,7 +4,6 @@
 #include "club.h"
 #include "KingClub.h"
 #include "timer.h"
-#define MAX 10000
 
 using namespace std;
 
@@ -22,7 +21,7 @@ int main() {
 		string str = "Timer: ";
 		Timer t(str);
 
-		for(i=0; i<MAX ; i++) {
+		for(i=0; i<10000 ; i++) {
 		print(i);
 		}
 

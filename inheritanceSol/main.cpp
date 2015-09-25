@@ -1,30 +1,27 @@
-#include <stdio.h>
-#include <windows.h>
-#include <iostream.h>
 #include "card.h"
 #include "club.h"
 #include "KingClub.h"
-#include "..\\util\\timer.h"
-#define MAX 10000
+#include "timer.h"
+#include <iostream>
+
+using namespace std;
 
 void print(int i) {
 		cout << i;
 }
 
-void main() {
+int main() {
 	  
-		int i;
-		Card c;
-		Club cl;
-		KingClub kc;
+	int i;
+	Card c;
+	Club cl;
+	KingClub kc;
 
-		Timer t("Timer: ");
+	Timer t("Timer: ");
 
-		for(i=0; i<MAX ; i++) {
+	for(i=0; i<10000 ; i++) {
 		print(i);
-//		kc.print(i);
-		}
-	
-
+	}
+	return 0;
 }
 

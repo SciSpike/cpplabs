@@ -5,7 +5,9 @@
  */
 
 #include "company.h"
-#include <iostream.h>
+#include <iostream>
+
+using namespace std;
 
 /*
  * Constructor for person

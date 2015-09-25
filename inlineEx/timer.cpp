@@ -3,18 +3,19 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "timer.h"
-#include "iostream.h"
+#include <iostream>
 #include <string>
+
+using namespace std;
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-Timer::Timer(std::string n) : name(n) {
-   time = GetTickCount();
+Timer::Timer(std::string n) : name(n), start(boost::chrono::high_resolution_clock::now()) {
 }
 
 Timer::~Timer() {
-   DWORD time2 = GetTickCount();
-   cout << name.data() << (time2 - time) << endl;
+   boost::chrono::high_resolution_clock::time_point end = boost::chrono::high_resolution_clock::now();
+   cout << name.data() << (end - start) << endl;
 }

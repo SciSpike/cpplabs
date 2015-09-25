@@ -6,7 +6,7 @@
 #define TIMER_H
 
 
-#include <windows.h>
+#include <boost/chrono.hpp>
 #include <string>
 
 class Timer {
@@ -16,7 +16,7 @@ public:
 
 private:
     std::string name;
-    DWORD time;
+	boost::chrono::high_resolution_clock::time_point start;
 };
 
 #endif // TIMER_H
