@@ -15,6 +15,7 @@
  ***************************************************************/
 
 #include "shape.h"
+#include <iostream>
 
 class Rectangle : public Shape {
 public:
@@ -27,13 +28,10 @@ public:
 	inline int   getWidth() const;
 	inline int   getHeight() const;
 
-	// TODO: add operator<<, operator>> (must be friends)
-	// TODO: add operator== (can be a friend or a member)
-
 	bool operator==(const Rectangle & rhs) const;
-	friend ostream& operator<<( ostream& ostr, 
+	friend std::ostream& operator<<( std::ostream& ostr, 
 	                            const Rectangle& rectangle );
-	friend istream& operator>>( istream& istr, 
+	friend std::istream& operator>>( std::istream& istr, 
 	                            Rectangle& rectangle );
 
 private:

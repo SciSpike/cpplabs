@@ -12,8 +12,9 @@
 ***************************************************************/
 
 #include "shape.h"
-#include <string.h>
-#include <iostream.h>
+#include <iostream>
+
+using namespace std;
 
 Shape::Shape(const int x, const int y) : myX( x ),   myY( y ) {
 	cout << "In the Constructor of Shape." << endl;

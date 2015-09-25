@@ -12,6 +12,9 @@
 
 /* Include Files */
 #include "tfield.h"
+#include <iostream>
+
+using namespace std;
 
 
 /* Constants and defines */

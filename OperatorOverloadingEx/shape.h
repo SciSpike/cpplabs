@@ -13,7 +13,7 @@
  * Modification History:
  *
  ***************************************************************/
-#include <iostream.h>
+#include <iostream>
 
 class Shape {
 public:

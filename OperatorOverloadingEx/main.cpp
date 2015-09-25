@@ -10,8 +10,10 @@
  *
  ***************************************************************/
 
-#include <iostream.h>
 #include "rectangle.h"
+#include <iostream>
+
+using namespace std;
 
 int main() {
   cout << "Operator Overloading Exercise Program" << endl;

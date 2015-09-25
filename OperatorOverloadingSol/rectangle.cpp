@@ -12,7 +12,9 @@
 ***************************************************************/
 
 #include "rectangle.h"
-#include <iostream.h>
+#include <iostream>
+
+using namespace std;
 
 Rectangle::Rectangle(const int height, const int width, const int x, const int y )
 : Shape( x, y ), myHeight( height ), myWidth( width )  {

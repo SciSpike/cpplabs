@@ -11,8 +11,10 @@
  ***************************************************************/
 
 /* Include Files */
-#include <iostream.h>
+#include <iostream>
 #include "expression.h"
+
+using namespace std;
 
 int main () {
    // (8/X-9)*98*(Y/6+7)

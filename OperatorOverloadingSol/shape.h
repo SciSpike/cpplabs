@@ -13,7 +13,7 @@
  * Modification History:
  *
  ***************************************************************/
-#include <iostream.h>
+#include <iostream>
 
 class Shape {
 public:
@@ -27,9 +27,9 @@ public:
 	// TODO: add operator<<, operator>> (must be friends)
 	// TODO: add operator== (can be a friend or a member)
 
-	friend ostream& operator<<( ostream& ostr, 
+	friend std::ostream& operator<<( std::ostream& ostr, 
 	                            const Shape& shape);
-	friend istream& operator>>( istream& ostr, 
+	friend std::istream& operator>>( std::istream& ostr, 
 	                            Shape& shape);
 	bool operator==(const Shape& rhs) const;
 

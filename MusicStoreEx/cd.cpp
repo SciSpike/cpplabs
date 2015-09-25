@@ -2,6 +2,9 @@
 
 
 #include "cd.h"
+#include <iostream>
+
+using namespace std;
 
 CD ReadNewCD(void) {
 	CD temp;

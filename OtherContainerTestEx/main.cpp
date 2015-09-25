@@ -4,15 +4,11 @@
  * This file test the algorithms
  */
 
-// Disable the warnings from microsoft
-#ifdef _MSC_VER
-#pragma warning( disable : 4786 )
-#endif
 
 #include <functional>
 #include <stack>
 #include <queue>
-#include <iostream.h>
+#include <iostream>
 using namespace std;
 
 void stackTest() {

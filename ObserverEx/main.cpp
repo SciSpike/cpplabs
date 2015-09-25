@@ -15,10 +15,6 @@
 #include "cview.h"
 #include "obsbutton.h"
 
-#ifdef  _MSC_VER
-#pragma warning( disable : 4786 )
-#endif
-
 /* Constants and defines */
 /****************************************************************
  *

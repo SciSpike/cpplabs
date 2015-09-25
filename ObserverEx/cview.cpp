@@ -13,7 +13,7 @@
 /* Include Files */
 #include "cview.h"
 #include "counter.h"
-#include <stdlib.h>
+#include <cstdlib>
 
 char* itoa( int value, char* result, int base ) {
     // check that the base if valid

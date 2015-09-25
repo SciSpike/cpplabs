@@ -11,8 +11,10 @@
  ***************************************************************/
 
 /* Include Files */
-#include <iostream.h>
+#include <iostream>
 #include "expression.h"
+
+using namespace std;
 
 int main () {
    // (X+(Y/2))*(Y-7)
