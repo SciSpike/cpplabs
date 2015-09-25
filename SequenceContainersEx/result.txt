@@ -1,0 +1,14 @@
+Using vector:
+	Insert at end 20,000 longs: 1279
+	Insert at beginning 20,000 longs: 60097
+	20,000 random accesses: 171
+
+Using deque:
+	Insert at end 20,000 longs: 832
+	Insert at beginning 20,000 longs: 632
+	20,000 random accesses: 2147
+
+Using list:
+	Insert at end 20,000 longs: 3606
+	Insert at beginning 20,000 longs: 3165
+	20,000 random accesses: 1191078

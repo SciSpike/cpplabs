@@ -1,0 +1,25 @@
+// DoubleSidedPrinter.cpp: implementation of the DoubleSidedPrinter class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "DoubleSidedPrinter.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+DoubleSidedPrinter::DoubleSidedPrinter()
+{
+
+}
+
+DoubleSidedPrinter::~DoubleSidedPrinter()
+{
+
+}
+
+
+void DoubleSidedPrinter::printDoubleSided() 
+{
+
+}

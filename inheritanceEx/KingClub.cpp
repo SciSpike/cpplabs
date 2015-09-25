@@ -1,0 +1,29 @@
+// KingClub.cpp: implementation of the KingClub class.
+//
+//////////////////////////////////////////////////////////////////////
+
+//#include "club.h"
+#include "KingClub.h"
+#include <iostream>
+
+using namespace std;
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+KingClub::KingClub()
+{
+
+}
+
+KingClub::~KingClub()
+{
+
+}
+//TODO implement print(...)
+void KingClub::print(int i)
+{
+	cout << i;
+}
+
