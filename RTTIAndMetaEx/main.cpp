@@ -15,12 +15,11 @@
 #include "rect.h"
 #include "oval.h"
 #include "meta.h"
+#include <iostream>
+
+using namespace std;
 
 /* Constants and defines */
-
-#ifdef  _MSC_VER
-#pragma warning( disable : 4786 )
-#endif
 
 /****************************************************************
  *

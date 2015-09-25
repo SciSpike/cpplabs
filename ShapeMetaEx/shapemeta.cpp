@@ -12,6 +12,9 @@
 
 /* Include Files */
 #include "shapemeta.h"
+#include <iostream>
+
+using namespace std;
 
 /* Const and defines */
 

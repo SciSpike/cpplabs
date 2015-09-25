@@ -11,7 +11,7 @@
  ***************************************************************/
 
 /* Include Files */
-#include <iostream.h>
+#include <iostream>
 #include <queue>
 #include "user.h"
 #include "job.h"

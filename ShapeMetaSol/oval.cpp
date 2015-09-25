@@ -12,6 +12,10 @@
 
 /* Include Files */
 #include "oval.h"
+#include <iostream>
+
+using namespace std;
+
 
 /* Const and defines */
 

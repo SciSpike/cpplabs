@@ -11,14 +11,12 @@
  ***************************************************************/
 
 /* Include Files */
-#include <fstream.h>
+#include <fstream>
 #include "shape.h"
 #include "rect.h"
 #include "oval.h"
 
-#ifdef  _MSC_VER
-#pragma warning( disable : 4786 )
-#endif
+using namespace std;
 
 void storeSomeShapes() {
   ofstream of( "shapes.txt" );

@@ -13,8 +13,9 @@
 
 /* Include Files */
 #include "shape.h"
-#include <string.h>
-#include <iostream.h>
+#include <iostream>
+
+using namespace std;
 
 /* Constants and defines */
 // This is how static datamembers are initialized

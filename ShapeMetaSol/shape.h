@@ -14,6 +14,7 @@
  ***************************************************************/
 
 /* Include Files */
+#include <iostream>
 #include "meta.h"
 
 /* Constants and defines */
@@ -21,17 +22,17 @@
 class Shape {
 public:
   // this class is made non abstract because of the
-  // instanciation algorithm in MetaImplementation
-  Shape( istream&) {}
+  // instantiation algorithm in MetaImplementation
+  Shape( std::istream&) {}
   Shape() {}
-  virtual void store( ostream& os ) {}
-  virtual Meta<istream>* getMeta();
-  static MetaImplementation<Shape,istream>* getClass();
-  static bool checkMatch( istream& );
+  virtual void store( std::ostream& os ) {}
+  virtual Meta<std::istream>* getMeta();
+  static MetaImplementation<Shape,std::istream>* getClass();
+  static bool checkMatch( std::istream& );
 protected:
-  static bool compareTags( istream&, std::string s );
+  static bool compareTags( std::istream&, std::string s );
 private:
-  static MetaImplementation<Shape,istream> *CLASS;
+  static MetaImplementation<Shape,std::istream> *CLASS;
 };
 
 #endif

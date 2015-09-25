@@ -12,6 +12,9 @@
 
 /* Include Files */
 #include "rect.h"
+#include <iostream>
+
+using namespace std;
 
 /* Const and defines */
 

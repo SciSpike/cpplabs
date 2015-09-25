@@ -4,11 +4,13 @@
  * This file contains the test code
  */
 
-#include <iostream.h>
+#include <iostream>
 #include <typeinfo>
 #include "shape.h"
 #include "rectangle.h"
 #include "oval.h"
+
+using namespaces std;
 
 /*
  * Test function for RTTI

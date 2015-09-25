@@ -16,14 +16,15 @@
 /* Include Files */
 #include "shapemeta.h"
 #include "shape.h"
+#include <iostream>
 
 /* Constants and defines */
 
 class Oval : public Shape {
 public:
-  Oval( istream& is );
+  Oval( std::istream& is );
   Oval();
-  virtual void store( ostream& os );
+  virtual void store( std::ostream& os );
   virtual  Meta* getMeta();
   static Meta* getClass();
 private:

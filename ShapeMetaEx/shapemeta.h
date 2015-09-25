@@ -18,7 +18,6 @@
 #include <vector>
 #include <string>
 #include <iostream>
-#include <iostream.h>
 
 /* Constants and defines */
 class Shape;
@@ -27,14 +26,14 @@ class Meta {
 public:
   Meta( const char* name, Meta* super, const char* tag );
   virtual ~Meta() { }
-  Shape* create( istream& is );
+  Shape* create( std::istream& is );
   void addSubclass(Meta*);
   const char* getTag();
   const char* getName();
 protected:
-  virtual Shape* instansiate(istream& is );
+  virtual Shape* instansiate(std::istream& is );
 private:
-  Shape* privateCreate( std::string s, istream& is );
+  Shape* privateCreate( std::string s, std::istream& is );
   std::string myTag;
   std::string myName;
   std::vector<Meta*> subclasses;
@@ -46,7 +45,7 @@ public:
   MetaImplementation( const char* name, Meta* super, const char* tag ) 
     : Meta( name, super, tag ) {}
 protected:
-  Shape* instansiate( istream& is ) {
+  Shape* instansiate( std::istream& is ) {
     return new T( is );
   }
 };

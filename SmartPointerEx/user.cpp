@@ -11,9 +11,11 @@
  ***************************************************************/
 
 /* Include Files */
-#include <iostream.h>
+#include <iostream>
 #include "user.h"
 #include "job.h"
+
+using namespace std;
 
 /* Const and defines */
 

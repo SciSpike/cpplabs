@@ -12,7 +12,9 @@
 
 /* Include Files */
 #include "job.h"
-#include <iostream.h>
+#include <iostream>
+
+using namespace std;
 
 /* Const and defines */
 

@@ -14,7 +14,6 @@
  ***************************************************************/
 
 /* Include Files */
-#include <iostream.h>
 #include "meta.h"
 #include "shape.h"
 

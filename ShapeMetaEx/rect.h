@@ -16,14 +16,14 @@
 /* Include Files */
 #include "shapemeta.h"
 #include "shape.h"
-
+#include <iostream>
 /* Constants and defines */
 
 class Rect : public Shape {
 public:
-  Rect( istream& is );
+  Rect( std::istream& is );
   Rect();
-  virtual void store( ostream& os );
+  virtual void store( std::ostream& os );
   virtual  Meta* getMeta();
   static Meta* getClass();
 private:

@@ -16,7 +16,7 @@
 /* Include Files */
 #include <vector>
 #include <map>
-#include <typeinfo.h>
+#include <typeinfo>
 #include <string>
 
 /* Constants and defines */
@@ -25,7 +25,7 @@ class Meta {
 public:
 
    // constructor
-   Meta( const type_info& theClass );
+   Meta( const std::type_info& theClass );
 
    // get name of class
    const char* name() const;
@@ -36,14 +36,14 @@ public:
    bool isSub( Meta* m );
    bool isSuper( Meta* m );
 	// Check if the type info maps to me or one of my superclasses
-   bool is( const type_info& ti );
+   bool is( const std::type_info& ti );
    static const Meta* find( std::string nameOfClass );
-   static const Meta* find( const type_info& theClass );
+   static const Meta* find( const std::type_info& theClass );
 private:
    typedef std::map<std::string, const Meta* > ClassMap;
    static ClassMap& getDictionary();
-   static void addClass( const type_info& theClass, const Meta* c );
-   const type_info& myTypeInfo;
+   static void addClass( const std::type_info& theClass, const Meta* c );
+   const std::type_info& myTypeInfo;
    typedef std::vector<Meta*> ClassVector;
    typedef ClassVector::iterator Iterator;
    typedef std::pair<std::string, const Meta*> ClassPair;

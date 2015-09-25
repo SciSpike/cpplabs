@@ -18,7 +18,6 @@
 #include <vector>
 #include <string>
 #include <iostream>
-#include <iostream.h>
 
 /* Constants and defines */
 
@@ -74,8 +73,8 @@ void* Meta<ERT>::createInstance( ERT& externalRep ) {
     return instansiate( externalRep );
   }
   else {
-    std::vector< Meta<ERT>* >::iterator i;
-    for( i = subclasses.begin(); i != subclasses.end(); i++ ) {
+//    std::vector< Meta<ERT>* >::iterator i;
+    for( auto i = subclasses.begin(); i != subclasses.end(); i++ ) {
       void * retVal = (*i)->createInstance( externalRep );
       if ( retVal != 0 )
          return retVal;

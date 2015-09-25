@@ -14,7 +14,7 @@
  ***************************************************************/
 
 /* Include Files */
-#include <iostream.h>
+#include <iostream>
 #include "meta.h"
 #include "shape.h"
 
@@ -22,15 +22,15 @@
 
 class Rect : public Shape {
 public:
-  Rect( istream& is );
+  Rect( std::istream& is );
   Rect();
-  virtual void store( ostream& os );
-  virtual  Meta<istream>* getMeta();
-  static MetaImplementation<Rect,istream>* getClass();
-  static bool checkMatch( istream& );
+  virtual void store( std::ostream& os );
+  virtual  Meta<std::istream>* getMeta();
+  static MetaImplementation<Rect,std::istream>* getClass();
+  static bool checkMatch( std::istream& );
 
 private:
-  static MetaImplementation<Rect,istream>* CLASS;
+  static MetaImplementation<Rect,std::istream>* CLASS;
 };
 
 #endif

@@ -1,5 +1,7 @@
 #include "meta.h"
-#pragma warning( disable : 4786)  
+
+using namespace std;
+
 
 /****************************************************************
  *

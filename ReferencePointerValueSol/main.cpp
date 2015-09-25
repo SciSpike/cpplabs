@@ -4,7 +4,6 @@
  * This file contains the test code for the deck
  */
 
-#include <iostream.h>
 #include "person.h"
 #include "company.h"
 
