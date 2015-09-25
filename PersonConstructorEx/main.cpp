@@ -4,8 +4,6 @@
  * This file contains a test loop and main for the 
  * from C to CPP program
  */
-#include <stdlib.h>
-#include <string.h>
 #include "person.h"
 
 

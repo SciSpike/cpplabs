@@ -1,6 +1,7 @@
-#include <iostream.h>
+#include <iostream>
 #include "timer.h"
 
+use std;
 
 int main() {
    Timer t("Time for 32000 outstream operations: ");

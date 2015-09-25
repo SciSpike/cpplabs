@@ -1,6 +1,8 @@
 #include "matrix.h"
-#include <iostream.h>
-#include <new.h>
+#include <iostream>
+#include <new>
+
+using namespace std;
 
 IntMatrix::IntMatrix(int m, int n)
 {

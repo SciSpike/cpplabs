@@ -2,11 +2,8 @@
  * Copyright SciSpike
  *
  */
-#include <stdlib.h>
-#include <string.h>
-#include <iostream>
-#include <iomanip>
 #include "person.h"
+#include <iostream>
 
 using namespace std;
 

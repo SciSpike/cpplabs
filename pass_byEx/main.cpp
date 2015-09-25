@@ -1,6 +1,8 @@
-#include <iostream.h>
 #include "matrix.h"
 #include "timer.h"
+#include <iostream>
+
+using namespace std;
 
 void printMatrix(IntMatrix &mtrx)
 {
