@@ -12,7 +12,7 @@
 
 /* Include Files */
 #include <iostream>
-#include <string>
+#include <cstring>
 #include "rectangle.h"
 #include "circle.h"
 

@@ -11,7 +11,7 @@
 #include <string>
 #include "idstring.h"
 
-using namespace InferData;
+using namespace SciSpike;
 
 class Person {
 public:

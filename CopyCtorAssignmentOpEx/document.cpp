@@ -2,6 +2,9 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <cstring>
+
+using namespace std;
 
 Document::Document() : count(0) {}
 

@@ -5,9 +5,9 @@
  */
 #ifndef IDSTRING_H
 #define IDSTRING_H
-#include <string.h>
+#include <cstring>
 
-namespace InferData {
+namespace SciSpike {
 
    class string {
    public:

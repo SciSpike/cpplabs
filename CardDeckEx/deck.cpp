@@ -6,6 +6,7 @@
 #include "card.h"
 #include <iostream>
 #include <time.h>
+#include <cstdlib>
 
 // Namespaces used
  using namespace std;

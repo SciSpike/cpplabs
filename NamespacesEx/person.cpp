@@ -5,9 +5,10 @@
  */
 
 #include "person.h"
-#include <string.h>
+#include <cstring>
 #include <iostream>
-#include <iostream.h>
+
+using namespace std;
 
 /*
  * Print a person
@@ -27,14 +28,14 @@ void Person::incrementAge() {
 /*
  * Get the name of a person
  */
-string Person::getName() const {
+std::string Person::getName() const {
    return name;;
 }
 
 /*
  * Constructor
  */
-Person::Person( const string& aName, int anAge) {
+Person::Person( const std::string& aName, int anAge) {
    name = aName;
    age = anAge;
 }

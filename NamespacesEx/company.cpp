@@ -5,8 +5,9 @@
  */
 
 #include <iostream>
-#include <iostream.h>
 #include "company.h"
+
+using namespace std;
 
 /*
  * Constructor for Company

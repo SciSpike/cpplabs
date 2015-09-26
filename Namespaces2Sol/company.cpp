@@ -6,7 +6,6 @@
 
 #include "company.h"
 #include <iostream>
-#include <iostream.h>
 
 /*
  * Constructor for Company
@@ -26,12 +25,12 @@ Company::~Company() {
  * Print the name of the company and all the employees
  */
 void Company::print() const {
-   cout << endl << "Company name: " << companyName.data() << endl;
-   cout << "Employees:" << endl;
+  std::cout << std::endl << "Company name: " << companyName.data() << std::endl;
+  std::cout << "Employees:" << std::endl;
    for (int i = 0; i < employees.getSize(); i++ ) {
-      cout << ".... " << employees[i]->getName().data() << endl;
+     std::cout << ".... " << employees[i]->getName().data() << std::endl;
    }
-	cout << endl;
+   std::cout << std::endl;
 }
 
 /*

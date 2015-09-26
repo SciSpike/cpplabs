@@ -4,10 +4,11 @@
  * This file contains the test code
  */
 
-#include <iostream.h>
+#include <iostream>
 #include "person.h"
 #include "company.h"
 
+using namespace std;
 
 /*
  * The test function

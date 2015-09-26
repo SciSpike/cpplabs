@@ -11,7 +11,7 @@
  ***************************************************************/
 
 /* Include Files */
-#include <string>
+#include <cstring>
 #include "rectangle.h"
 #include "circle.h"
 #include <iostream>

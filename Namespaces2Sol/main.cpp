@@ -4,10 +4,8 @@
  * This file contains the test code
  */
 
-#include <iostream.h>
 #include "person.h"
 #include "company.h"
-
 
 /*
  * The test function

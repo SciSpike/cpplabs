@@ -1,5 +1,6 @@
 #include "person.h"
-#inlcude <string>
+#include <cstring>
+#include <cstdio>
 
 using namespace std;
 
@@ -7,7 +8,7 @@ void set_string(char *dest, const char *src)
 {
     if (dest) {
         delete [] dest;
-        dest = NULL;
+        dest = 0;
     }
     
     if (src) {
@@ -65,10 +66,10 @@ void Date::setDay(unsigned char d)
 Address::Address(const char *_street, const char *_city,
 				 const char *_state, const char *_zip)
 {
-    street = NULL;
-    city = NULL;
-    state = NULL;
-    zip = NULL;
+    street = 0;
+    city = 0;
+    state = 0;
+    zip = 0;
     
     set_string(street, _street);
     set_string(city, _city);
@@ -128,7 +129,7 @@ Person::Person(const char *n, Address &a, Date &d) :
 addr(a.getStreet(), a.getCity(), a.getState(), a.getZip()),
 birthDate(d.getYear(), d.getMonth(), d.getDay())
 {
-    name = NULL;
+    name = 0;
     set_string(name, n);
 }
 

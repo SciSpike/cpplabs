@@ -11,8 +11,10 @@
  ***************************************************************/
 
 /* Include Files */
-#include <iostream.h>
+#include <iostream>
 #include "rectangle.h"
+
+using namespace std;
 
 /* Constants and defines */
 

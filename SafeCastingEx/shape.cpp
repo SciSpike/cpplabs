@@ -13,8 +13,10 @@
 
 /* Include Files */
 #include "shape.h"
-#include <string.h>
-#include <iostream.h>
+#include <cstring>
+#include <iostream>
+
+using namespace std;
 
 /* Constants and defines */
 

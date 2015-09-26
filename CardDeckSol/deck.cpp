@@ -6,6 +6,7 @@
 #include "card.h"
 #include <iostream>
 #include <time.h>
+#include <cstdlib>
 
 // The deck will be suffled based on this constant
 #define SHUFFLE_TIMES     100

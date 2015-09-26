@@ -14,7 +14,7 @@
 /* Include Files */
 #include "document.h"
 #include <iostream>
-#include <string>
+#include <cstring>
 
 using namespace std;
 

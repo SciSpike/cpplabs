@@ -2,7 +2,8 @@
 #define STACK_H
 
 #include <iostream>
-#include "id_exception.cpp"
+#include "id_exception.h"
+
 /*
  * Copyright SciSpike
  *

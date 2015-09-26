@@ -5,7 +5,7 @@
  * from C to CPP program
  */
 #include "person.h"
-
+#include <cstring>
 
 /*
  * Test code

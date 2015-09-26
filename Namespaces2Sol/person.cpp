@@ -7,14 +7,13 @@
 #include "person.h"
 #include <string.h>
 #include <iostream>
-#include <iostream.h>
 
 /*
  * Print a person
  */
 void Person::print() const {
-   cout << "Name: " << name.data() << endl;
-   cout << "Age : " << age << endl;
+  std::cout << "Name: " << name.data() << std::endl;
+  std::cout << "Age : " << age << std::endl;
 }
 
 /*
@@ -27,14 +26,14 @@ void Person::incrementAge() {
 /*
  * Get the name of a person
  */
-std::string Person::getName() const {
+string Person::getName() const {
    return name;;
 }
 
 /*
  * Constructor
  */
-Person::Person( const std::string& aName, int anAge) {
+Person::Person( const string& aName, int anAge) {
    name = aName;
    age = anAge;
 }

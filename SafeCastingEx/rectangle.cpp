@@ -13,7 +13,8 @@
 
 /* Include Files */
 #include "rectangle.h"
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 /* Constants and defines */
 

@@ -14,6 +14,7 @@
 /* Include Files */
 #include "our_string.h"
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
