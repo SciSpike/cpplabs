@@ -8,10 +8,17 @@
 #include <algorithm>
 #include <numeric>
 #include <iostream>
-#include <vector>
+#include <iterator>
 #include <set>
 #include <map>
 #include <string>
+#include <cstring>
+
+#ifndef NO_BOOST
+#include <boost/algorithm/cxx11/is_sorted.hpp>
+#include <boost/algorithm/cxx11/copy_n.hpp>
+#endif
+
 using namespace std;
 
 bool operator< ( const string& s1, const string& s2 ) {
@@ -129,8 +136,7 @@ void copyBackward() {
 	cout << endl;
 }
 
-#ifndef _MSC_VER
-// copy_n is not defined in microsoft
+#ifndef NO_BOOST
 void copyN() {
 	int numbers[] = {1,2,3,5,7,11,13,17,19,23};
 	const int N = sizeof(numbers)/sizeof(int);
@@ -139,10 +145,10 @@ void copyN() {
 	vector<int> v2( 6 ); // note need size
 	   // copy the first 4 elements in v1 to v2
              // v2 should now hold 1,2,3,5,7,11
-	copy_n(v1.begin(), 6, v2.begin());
+	boost::algorithm::copy_n(v1.begin(), 6, v2.begin());
 
 		// the next line should print "1 2 3 5"
-	copy_n(v2.begin(), 4 ,ostream_iterator<int>(cout," ")) ;
+	boost::algorithm::copy_n(v2.begin(), 4 ,ostream_iterator<int>(cout," ")) ;
 	cout << endl;
 }
 #endif
@@ -349,8 +355,7 @@ void innerProduct() {
 	     << endl;
 }
 
-#ifndef _MSC_VER
-// is_sorted is not implemented by MS
+#ifndef NO_BOOST
 void isSorted() {
 	int values1[] = {1, 2, 3, 4, 5, 6};
 	int values2[] = {1, 2, 3, 5, 4, 6};
@@ -360,9 +365,9 @@ void isSorted() {
 	
 
 	cout << "values 1 sorted? " << 
-	   (is_sorted( v1.begin(), v1.end() ) ? "Yes" : "No") << endl;
+	   (boost::algorithm::is_sorted( v1.begin(), v1.end() ) ? "Yes" : "No") << endl;
 	cout << "values 2 sorted? " << 
-	   (is_sorted( v2.begin(), v2.end() ) ? "Yes" : "No") << endl;
+	   (boost::algorithm::is_sorted( v2.begin(), v2.end() ) ? "Yes" : "No") << endl;
 }
 #endif
 
@@ -995,7 +1000,7 @@ int main() {
 	binarySearch();
 	copy();
 	copyBackward();
-#ifndef _MSC_VER
+#ifndef NO_BOOST
 	copyN(); // copy_n not in Visual C++
 #endif
 	count();
@@ -1012,7 +1017,7 @@ int main() {
 	generateN();
 	includes();
 	innerProduct();
-#ifndef _MSC_VER
+#ifndef NO_BOOST
 	isSorted();
 #endif
 	iterSwap();

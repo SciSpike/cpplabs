@@ -11,6 +11,8 @@
 #include <set>
 #include <map>
 #include <string>
+#include <cstring>
+
 using namespace std;
 
 bool operator< ( const string& s1, const string& s2 ) {
