@@ -2,7 +2,7 @@
 #include <iostream>
 #include "point.h"
 
-use namespace std;
+using namespace std;
 
 // TODO: Call the ShapeImplementation constructor.
 Rectangle::Rectangle(int upperLeftX, int upperLeftY,

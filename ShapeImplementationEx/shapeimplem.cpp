@@ -2,7 +2,7 @@
 #include <iostream>
 #include "point.h"
 
-use namespace std;
+using namespace std;
 
 ShapeImplementation::ShapeImplementation(Point ul, Point lr)
 								 : myUpperLeft( ul ),

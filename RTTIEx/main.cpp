@@ -10,7 +10,7 @@
 #include "rectangle.h"
 #include "oval.h"
 
-using namespaces std;
+using namespace std;
 
 /*
  * Test function for RTTI
