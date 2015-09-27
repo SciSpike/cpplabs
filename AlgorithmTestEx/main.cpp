@@ -14,6 +14,8 @@
 #include <string>
 #include <cstring>
 
+#define NO_BOOST
+
 #ifndef NO_BOOST
 #include <boost/algorithm/cxx11/is_sorted.hpp>
 #include <boost/algorithm/cxx11/copy_n.hpp>
@@ -871,6 +873,26 @@ void sort() {
 	// Prints: "1 1 1 1 1 23 33 45 62 74 77"
 	copy( v.begin(), v.end(), ostream_iterator<int>(cout," ") );
 }
+
+void sortWithLambda() {
+	int numbers[] = {1,45,62,1,77,1,33,1,74,1,23};
+	const int N = sizeof(numbers)/sizeof(int);
+
+	vector<int> v( numbers, numbers + N ); // C-style init.
+
+	// sort all elements in v
+	std::sort(
+	     v.begin(),
+	     v.end(),
+	     [](int a, int b) {
+	       return b < a;
+	     }
+	     );
+
+	// Prints: "1 1 1 1 1 23 33 45 62 74 77"
+	copy( v.begin(), v.end(), ostream_iterator<int>(cout," ") );
+}
+
 
 void sortHeap() {
 	int numbers[] = {1,45,62,1,77,1,33,1,74,1,23};

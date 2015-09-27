@@ -11,7 +11,7 @@
 #include "rectangle.h"
 #include <iostream>
 
- using namespace std;
+using namespace std;
  
 /* Create destructors for the class Shape and the
    class Rectangle.  Perform cleanup required

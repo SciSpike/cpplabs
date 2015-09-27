@@ -14,6 +14,7 @@
 /* Include Files */
 #include "shape.h"
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 

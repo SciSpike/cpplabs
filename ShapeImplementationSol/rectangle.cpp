@@ -1,6 +1,8 @@
 #include "rectangle.h"
-#include <iostream.h>
+#include <iostream>
 #include "point.h"
+
+using namespace std;
 
 Rectangle::Rectangle(int upperLeftX, int upperLeftY,
 					 int loweRightX, int lowerRightY)

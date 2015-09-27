@@ -1,5 +1,7 @@
 #include "point.h"
-#include <iostream.h>
+#include <iostream>
+
+using namespace std;
 
 Point::Point(int x, int y) : myX( x ),  myY( y )
 {

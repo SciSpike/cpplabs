@@ -1,5 +1,6 @@
-#include <iostream.h>
+#include <iostream>
 #include "rectangle.h"
+using namespace std;
 
 int main() {
   cout << "Shape Implementation Exercise Program" << endl;

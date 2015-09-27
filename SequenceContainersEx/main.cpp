@@ -9,6 +9,7 @@
 #include <list>
 #include <iostream>
 #include <string>
+#include <cstdlib>
 #include "timer.h"
 
 using namespace std;

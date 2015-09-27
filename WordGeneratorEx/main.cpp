@@ -4,11 +4,6 @@
  * This file test the algorithms
  */
 
-// Disable the warnings from microsoft
-#ifdef _MSC_VER
-#pragma warning( disable : 4786 )
-#endif
-
 #include <iostream>
 
 using namespace std;

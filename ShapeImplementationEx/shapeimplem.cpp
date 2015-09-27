@@ -1,6 +1,8 @@
 #include "shapeimplem.h"
-#include <iostream.h>
+#include <iostream>
 #include "point.h"
+
+use namespace std;
 
 ShapeImplementation::ShapeImplementation(Point ul, Point lr)
 								 : myUpperLeft( ul ),
