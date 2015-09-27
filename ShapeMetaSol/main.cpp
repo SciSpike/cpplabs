@@ -12,6 +12,7 @@
 
 /* Include Files */
 #include <fstream>
+#include <iostream>
 #include "shape.h"
 #include "rect.h"
 #include "oval.h"

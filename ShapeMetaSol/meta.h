@@ -18,7 +18,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
-
+#include <cassert>
 /* Constants and defines */
 
 template <class ERT>
@@ -39,48 +39,40 @@ public:
 protected:
   virtual void* instansiate( ERT& is ) = 0;
   virtual bool checkMatch( ERT& is ) = 0;
-  void* createInstance(ERT&);
+  void* createInstance(ERT& externalRep) {
+    if ( checkMatch( externalRep ) ) {
+      return instansiate( externalRep );
+    }
+    else {
+      for( auto i = subclasses.begin(); i != subclasses.end(); i++ ) {
+	auto retVal = (*i)->createInstance( externalRep );
+	if ( retVal != 0 )
+	  return static_cast<void*>(retVal);
+      }
+    }
+    return 0;
+  }
 private:
   std::string myName;
   std::vector<Meta<ERT>*> subclasses;
 };
 
 template <class T, class ERT>
-class MetaImplementation : public Meta<ERT> {
-public:
-  MetaImplementation( const char* name, Meta<ERT>* super) 
-    : Meta<ERT>( name, super) {}
+  class MetaImplementation : public Meta<ERT> {
+ public:
+ MetaImplementation( const char* name, Meta<ERT>* super) 
+   : Meta<ERT>( name, super) {}
   T* create( ERT& externalRep ) {
-    return (T*) createInstance( externalRep );
+    return static_cast<T*>(this->createInstance( externalRep ));
   }
-protected:
+ protected:
   bool checkMatch( ERT& externalRep ) {
     return T::checkMatch( externalRep );
   }
-  void* instansiate( ERT& externalRep ) {
+  T* instansiate( ERT& externalRep ) {
     return new T( externalRep );
   }
 };
 
-/****************************************************************
- *
- * Description: The create function for instances
- *
- ***************************************************************/
-template<class ERT>
-void* Meta<ERT>::createInstance( ERT& externalRep ) {
-  if ( checkMatch( externalRep ) ) {
-    return instansiate( externalRep );
-  }
-  else {
-//    std::vector< Meta<ERT>* >::iterator i;
-    for( auto i = subclasses.begin(); i != subclasses.end(); i++ ) {
-      void * retVal = (*i)->createInstance( externalRep );
-      if ( retVal != 0 )
-         return retVal;
-    }
-  }
-  return 0;
-}
 
 #endif
