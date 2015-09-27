@@ -1,5 +1,5 @@
 #include "matrix.h"
-#include "timer.h"
+#include "../lib/timer.h"
 #include <iostream>
 
 using namespace std;

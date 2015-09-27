@@ -1,5 +1,4 @@
-#include <iostream.h>
-#include "timer.h"
+#include "../lib/timer.h"
 
 enum ShapeType {SquareShape, CircleShape, OvalShape, TriangleShape};
 

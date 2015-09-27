@@ -3,7 +3,7 @@
 #include "card.h"
 #include "club.h"
 #include "KingClub.h"
-#include "timer.h"
+#include "../lib/timer.h"
 
 using namespace std;
 

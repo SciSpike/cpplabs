@@ -7,7 +7,7 @@
 #include <iostream>
 #include <algorithm>
 #include "primenumbergenerator.h"
-#include "timer.h"
+#include "../lib/timer.h"
 
 /*
  * Test program. 

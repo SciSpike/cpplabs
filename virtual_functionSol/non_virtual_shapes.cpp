@@ -1,5 +1,4 @@
-#include <iostream.h>
-#include "timer.h"
+#include "../lib/timer.h"
 
 //////////////////////////////////////////////////////////////////////////
 //
@@ -53,8 +52,7 @@ public:
     void paint() {}
 };
 
-int main1()
-{
+int main() {
     int         i;
     const int   num_iter = 800000;
 
