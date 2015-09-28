@@ -36,14 +36,13 @@
 
 Logger::Logger()
 {
-   myCardIndex = 0;
-   myEmployeeIndex = 0;
-
-   for( int i=0; i<MAX_OBJECTS; i++ )
-   {
-		myCardList[i] = 0;
-		myEmployeeList[i] = 0;
-   }
+  myCardIndex = 0;
+  myEmployeeIndex = 0;
+  
+  for( int i=0; i<MAX_OBJECTS; i++ ) {
+    myCardList[i] = 0;
+    myEmployeeList[i] = 0;
+  }
 }
 
 /****************************************************************
@@ -62,13 +61,13 @@ Logger::Logger()
 
 void Logger::addCard
 (
-	Card* card  // Card that needs to be debugged
- )
+ Card* card  // Card that needs to be debugged
+)
 {
-	// Code here should give some status back that add worked or
-	// not
-	if( myCardIndex < MAX_OBJECTS )
-		myCardList[myCardIndex++] = card;
+  // Code here should give some status back that add worked or
+  // not
+  if( myCardIndex < MAX_OBJECTS )
+    myCardList[myCardIndex++] = card;
 }
 
 /****************************************************************
@@ -87,13 +86,13 @@ void Logger::addCard
 
 void Logger::addEmployee
 (
-	Employee* employee  // Employee that needs to be debugged
- )
+ Employee* employee  // Employee that needs to be debugged
+)
 {
-	// Code here should give some status back that add worked or
-	// not
-	if( myEmployeeIndex < MAX_OBJECTS )
-		myEmployeeList[myEmployeeIndex++] = employee;
+  // Code here should give some status back that add worked or
+  // not
+  if( myEmployeeIndex < MAX_OBJECTS )
+    myEmployeeList[myEmployeeIndex++] = employee;
 }
 
 /****************************************************************
@@ -113,13 +112,13 @@ void Logger::addEmployee
 
 void Logger::dumpSnapshot()
 {
-	// Logging Cards; Just print the guts
-	for( int i=0; i<MAX_OBJECTS; i++ )
-		if( myCardList[i] )
-  		   myCardList[i]->print();
-
-	// Logging Employees; Just print the guts
-	for(int i=0; i<MAX_OBJECTS; i++ )
-		if( myEmployeeList[i] )
-  		   myEmployeeList[i]->dumpState();
+  // Logging Cards; Just print the guts
+  for( int i=0; i<MAX_OBJECTS; i++ )
+    if( myCardList[i] )
+      myCardList[i]->print();
+  
+  // Logging Employees; Just print the guts
+  for(int i=0; i<MAX_OBJECTS; i++ )
+    if( myEmployeeList[i] )
+      myEmployeeList[i]->dumpState();
 }
