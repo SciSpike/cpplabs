@@ -25,7 +25,7 @@ int main() {
   Document d3;
   d3 = d2;
 
-  cout << "\nDeleting the orginal..." << endl;
+  cout << "\nDeleting the original..." << endl;
 
   delete d1;
 
@@ -35,5 +35,9 @@ int main() {
   cout << "\nPrinting the copies doc2 and doc3:" << endl;
   cout << d2 << endl
 	  << d3 << endl;
+
+  cout << endl << "Let's also try to ensure that assigment to self works correctly" << endl;
+  d3 = d3;
+  cout << d3 << endl;
 
 }
