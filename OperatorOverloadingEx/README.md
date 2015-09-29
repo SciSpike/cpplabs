@@ -24,3 +24,10 @@ Caution: the lab uses inheritance! Try either approach:
 * easier: write derived class op overloads only, and access the base member data directly (it’s declared protected)
 * harder: write base and derived class op overloads, and call the base functions explicitly from the derived class
 
+If you decide to go for the harder approach, you'll have to trick the compile to see the rectangle as a shape. 
+This can be done by casting the Rectangle into a Shape inside the stream operator for the rectangle.
+
+E.g.:
+<pre>
+    cout << ((const Shape&) theRectangle)
+</pre>
