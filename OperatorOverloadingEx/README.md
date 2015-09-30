@@ -28,6 +28,6 @@ If you decide to go for the harder approach, you'll have to trick the compile to
 This can be done by casting the Rectangle into a Shape inside the stream operator for the rectangle.
 
 E.g.:
-<pre>
+``` c++
     cout << ((const Shape&) theRectangle)
-</pre>
+```
