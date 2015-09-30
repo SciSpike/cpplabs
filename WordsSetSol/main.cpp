@@ -26,11 +26,10 @@ using namespace std;
  * duplicate words should be removed
  */
 void generateWordList( istream& is, ostream& os ) {
-   set<string> words;
-   copy( istream_iterator<string>( is ),
-         istream_iterator<string>(),
-         inserter(words, words.begin()) );
-   copy( words.begin(), words.end(), ostream_iterator<string>( os, "\n" ) );
+  set<string> words (
+		     (istream_iterator<string>( is )),
+		     istream_iterator<string>());
+  copy(words.begin(), words.end(), ostream_iterator<string>(os, " "));
 }
 
 
