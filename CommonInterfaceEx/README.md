@@ -13,6 +13,3 @@ In the exercise, we want you to apply the Loggable interface to each of the abst
 * Loggable. This is simply an interface that the the other classes must implement.
 * Logger. An object that keeps track of loggables and can be asked to print the state of them all to the outputstream.
 
-In this exercise you're asked to:
-
-* 

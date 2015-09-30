@@ -17,7 +17,7 @@ using namespace std;
 // TODO Change this type and run it with all the
 // TODO standard sequence containers of STL
 // TODO These are {vector,deque,list}
-typedef list<long> CollectionType;
+typedef deque<long> CollectionType;
 
 /*
  * Insert 20000 elements at the end of the 
@@ -60,11 +60,11 @@ void timeRandomAccess() {
     Timer t("20,000 random accesses: ");
     for (long l = 0; l < 20000; l++) {
       long l2;
-      //			l2 = c[rand() % 20000];
+      l2 = c[rand() % 20000];
       // for list use this (you may want to go 
       // down to 100 accesses :-)
       int i = rand() % 20000;
-      list<long>::iterator it = c.begin();
+      auto it = c.begin();
       for (int j = 0; j < i; j++) {
 	it++;
       }
