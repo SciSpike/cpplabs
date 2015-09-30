@@ -9,7 +9,7 @@ For the classes Shape and Rectangle, overload:
 
 Goal:
 
-'''C++
+```C++
  Rectangle r1, r2;
  cin >> r1;
  cin >> r2;
@@ -17,7 +17,7 @@ Goal:
     cout << r1 << “ and “ << r2 << “ are the same!” << endl;
  else
     cout << r1 << “ and “ << r2 << “ are not the same!” << endl;
-'''
+```
 
 Caution: the lab uses inheritance! Try either approach:
 
