@@ -9,7 +9,7 @@ For the classes Shape and Rectangle, overload:
 
 Goal:
 
-```C++
+``` c++
  Rectangle r1, r2;
  cin >> r1;
  cin >> r2;
