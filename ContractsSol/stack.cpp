@@ -9,6 +9,8 @@
 #include "stack.h"
 #include "contracts.h"
 #include <iostream>
+using namespace std;
+
 /*
  * The stack constructor
  */
