@@ -33,16 +33,11 @@ Stack::~Stack() {
  * The push implementation
  */
 void Stack::push( int value ) {
-	PRE_CONDITIONS(getSize() < getMax());
-	REMEMBER(int, myTopIndex);
       //TODO Add Remember myTopIndex by contracts
-   
       //TODO Add precondition that (myTopIndex+1) < MAX_STACK_SIZE );
    
    myArray[++myTopIndex] = value;
 
-   POST_CONDITIONS(OLD(myTopIndex) == myTopIndex - 1);
-   POST_CONDITIONS(myArray[myTopIndex] == value);
       //TODO Add Post Condition (myTopIndex == OLD(myTopIndex) + 1) && 
       //     (myArray[myTopIndex] == value) );
 }

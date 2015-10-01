@@ -9,16 +9,15 @@
 #ifdef CONTRACTS
 #include <iostream>
 #include <cstdlib>
-using namespace std;
 #endif
 
 /*
  * The pre condition macros
  */
 #ifdef CONTRACTS
-#define PRE_CONDITIONS(c) ( (c) ? (void)0 : (void)( cerr <<    \
+#define PRE_CONDITIONS(c) ( (c) ? (void)0 : (void)( std::cerr <<	\
         "Precondition failed: " #c ", file " << __FILE__ << \
-        ", Line " << __LINE__ << endl, abort() ) )
+	", Line " << __LINE__ << std::endl, abort() ) )
 #else
 #define PRE_CONDITIONS( c )
 #endif
@@ -27,9 +26,9 @@ using namespace std;
  * The postcondition macros
  */
 #ifdef CONTRACTS
-#define POST_CONDITIONS(c) ( (c) ? (void)0 : (void)( cerr <<    \
+#define POST_CONDITIONS(c) ( (c) ? (void)0 : (void)( std::cerr <<   \
 	    "Postcondition failed: " #c << ", file " << __FILE__ << \
-        ", Line " << __LINE__ << endl, abort() ) )
+	    ", Line " << __LINE__ << std::endl, abort() ) )
 #else
 #define POST_CONDITIONS( c )
 #endif
