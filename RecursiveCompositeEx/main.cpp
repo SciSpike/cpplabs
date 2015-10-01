@@ -18,6 +18,7 @@ using namespace std;
 
 int main () {
    // (8/X-9)*98*(Y/6+7)
+  /* --- Uncommment this and see if you can make it run
   Expression<int> *e =
     new Multiplier<int>
     (
@@ -53,6 +54,6 @@ int main () {
   cout << "Result = " << i << "\n";
 
   delete e;
-
+  --- */
   return 0;
 }

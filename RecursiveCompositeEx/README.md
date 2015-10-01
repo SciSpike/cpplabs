@@ -16,11 +16,12 @@ Create a class diagram showing your solution
 Implement the expression framework.
 
 Make the value type templated:
-<pre>
+
+```C++
  template < class T >
  class Expression {
  public:
      virtual T getValue() const = 0;
      virtual void setVariable( const char* name, T value );
  };
-</pre>
+```

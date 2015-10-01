@@ -115,34 +115,8 @@ private:
  ***************************************************************/
 template <class T>
 class BinaryExpression : public Expression<T> {
-public:
-  BinaryExpression(Expression<T>* e1, Expression<T>* e2) {
-	  this->left = e1;
-	  this->right = e2;
-  }
-  
-  virtual ~BinaryExpression() {
-	 delete this->left;
-	 delete this->right;
-  }
-
-  virtual T getValue() const {
-	  return this->calculate(
-			  this->left->getValue(),
-			  this->right->getValue()
-	  );
-  }
-
-  virtual void setVariable( const char* name, T value ) {
-	  this->left->setVariable(name, value);
-	  this->right->setVariable(name, value);
-  }
-
-protected:
-  virtual T calculate(T left, T right) const = 0;
-private:
-  Expression<T> * left;
-  Expression<T> * right;
+  //TODO: It would probably be an advantage to have a superclass for the various binary expressions
+  //TODO: What do Multiplier/Adders/Subtracters/... have in common?
 };
 
 /****************************************************************
@@ -154,14 +128,7 @@ private:
  ***************************************************************/
 template <class T>
 class Multiplier : public BinaryExpression<T> {
-public:
-  Multiplier(Expression<T>* e1, Expression<T>* e2)
-	: BinaryExpression<T>(e1, e2) {}
-  virtual ~Multiplier(){}
-protected:
-  T calculate(T left, T right) const {
-	  return left * right;
-  }
+  // TODO: Implement the Multiplier
 };
 
 /****************************************************************
@@ -173,14 +140,7 @@ protected:
  ***************************************************************/
 template <class T>
 class Adder : public BinaryExpression<T> {
-public:
-	  Adder(Expression<T>* e1, Expression<T>* e2)
-		: BinaryExpression<T>(e1, e2) {}
-	 virtual ~Adder(){}
-protected:
-	  T calculate(T left, T right) const {
-		  return left + right;
-	  }
+  // TODO: Implement the Adder
 };
 
 /****************************************************************
@@ -192,14 +152,7 @@ protected:
  ***************************************************************/
 template <class T>
 class Subtracter : public BinaryExpression<T> {
-public:
-	  Subtracter(Expression<T>* e1, Expression<T>* e2)
-		: BinaryExpression<T>(e1, e2) {}
-	  ~Subtracter() {}
-protected:
-	  T calculate(T left, T right) const {
-		  return left - right;
-	  }
+  // TODO: Implement the Subtracter
 };
 
 /****************************************************************
@@ -211,14 +164,7 @@ protected:
  ***************************************************************/
 template <class T>
 class Divider : public BinaryExpression<T> {
-public:
-	  Divider(Expression<T>* e1, Expression<T>* e2)
-		: BinaryExpression<T>(e1, e2) {}
-	  virtual  ~Divider() {}
-protected:
-	  T calculate(T left, T right) const {
-		  return left / right;
-	  }
+  // TODO: Implement the Divider
 };
 
 #endif
