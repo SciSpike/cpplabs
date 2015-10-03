@@ -11,4 +11,6 @@ Complete the “Address Book” application using the associative containers des
 * List all entries
 * Quit
 
-Feel free to declare your internal list globally, or as a static variable inside the “handleInput()” function.
+You may delcare your map in static space (not recommened style) or you can simply define the map as a static variable inside the handleInput() function.
+
+
